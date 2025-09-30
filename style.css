@@ -1,0 +1,111 @@
+/* Reset y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+header {
+    background: #0077cc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+#hero {
+    padding: 2rem;
+    text-align: center;
+    background: #e6f0ff;
+}
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+}
+th {
+    background: #0077cc;
+    color: white;
+}
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+}
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #005fa3;
+}
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0077cc;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th {
+        display: none;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+        margin-bottom: 1rem;
+    }
+    td:before {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 45%;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "Aseguradora"; }
+    td:nth-of-type(2):before { content: "Precio"; }
+    td:nth-of-type(3):before { content: "Cobertura"; }
+    td:nth-of-type(4):before { content: "Enlace"; }
+}
